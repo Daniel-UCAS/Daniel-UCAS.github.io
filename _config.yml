@@ -1,0 +1,71 @@
+# highlighter: pygments
+highlighter: rouge
+
+#markdown: redcarpet
+#redcarpet:
+#  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+kramdown:
+          input: GFM
+#          extensions:
+#            - autolink
+#            - footnotes
+#            - smart
+#          enable_coderay: true
+#          syntax_highlighter: rouge
+#          coderay:
+#          coderay_line_numbers:  nil
+          math_engine: mathjax
+
+
+gems: [jekyll-paginate]
+paginate: 2
+paginate_path: "page:num"
+layout: post
+permalink: /:categories/:title/
+excerpt_separator: "[-----]"
+
+#mode: dev
+mode: product
+url: https://Daniel-UCAS.github.io/
+devurl: http://localhost:4000/
+name: Daniel-UCAS
+title: Daniel-UCAS | The best design is as little as possible.
+description: "Danniel Cheng's blog for programming, wind energy, CFD"
+
+my:
+    displayName: Daniel-UCAS
+    realName: Yu Cheng
+    realName_cn: 程瑜
+    jobTitle: "PhD student"
+    contact:
+        qq: 983705561
+        email: chengyuhit@gmail.com
+        github: http://www.github.com/Daniel-UCAS
+        tel: 1780105xxxx
+        address:
+            country: China
+            state: Beijing
+            city: Beijing
+            distribute: HaiDian
+            postcode: 100080
+            cell: "Baofusiqiao"
+    skills:
+        CFD: ["numerical simulation", "Discontinuous Galerkin", "High order scheme", "HPC"]
+        programming: ["C++", "Matlab", "Julia", "LaTex"]
+        tools: ["OpenFOAM", "Fluent", "Git | Github", "Linux", "Jekyll"]
+
+collections:
+    qqGroupGuide:
+        output: true
+
+defaults:
+  - scope:
+        path: ""
+        type: "posts"
+    values:
+        excerpt: "{{ page.content }} | slice: 0 300"
+  - scope:
+        path: ""
+        type: "qqGroupGuide"
+    values:
+        layout: markdownreader_bare

@@ -1,0 +1,26 @@
+---
+layout: post
+category: introduction
+title: What I am focusing?
+tags: [CFD, wind energy,OpenFOAM,Fluent,program]
+excerpt: What is this blog intending for?
+---
+
+# Daniel-UCAS
+The blog provides some basic skills for programming, CFD, wind energy.
+
+### Topics
+- Fluid mechanics
+- CFD theory
+- Large eddy simulation
+- OpenFOAM
+- Wind energy
+- Wind turbine
+- Wake
+- C++
+- Matlab
+- Python
+
+### Specializations for
+- [SOWFA](https://github.com/NREL/SOWFA)
+- [turbinesFoam](https://github.com/turbinesFoam/turbinesFoam)

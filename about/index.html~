@@ -1,0 +1,58 @@
+---
+layout: base
+---
+{% include mode_switcher.html %}
+
+{% assign my = site.my %}
+<div class="row" id="about">
+    <header id="title">
+        <img src="{{ crturl }}images/me.png">
+        <h1>{{ my.realName_cn }} | <small>{{ my.jobTitle }}</small></h1>
+    </header>
+
+    <section id="intro">
+        <p>cfd</p>
+        <p>cfd</p>
+        <p>cfd</p>
+    </section>
+
+    <section id="skillsets">
+        <h2>SKILLS</h2>
+        <ul id="frontend">
+            <i class="fa fa-tv">Programming</i>
+            {% for skill in my.skills.programming %}
+            <li>{{ skill }}</li>
+            {% endfor %}
+        </ul>
+        <ul id="backend">
+            <i class="fa fa-cog"> CFD</i>
+            {% for skill in my.skills.CFD %}
+            <li>{{ skill }}</li>
+            {% endfor %}
+        </ul>
+        <ul id="tools">
+            <i class="fa fa-wrench"> Skills</i>
+            {% for skill in my.skills.tools %}
+            <li>{{ skill }}</li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    <section id="findme">
+        <h2>FIND ME ON</h2>
+        <ul>
+            <li><a href="{{ my.contact.github }}"><i class="fa fa-github"></i></a></li>
+            <li><a href="{{ my.contact.qzone }}"><i class="fa fa-qq"></i></a></li>
+            <li><a href="{{ my.contact.pinterest }}"><i class="fa fa-pinterest"></i></a></li>
+        </ul>
+    </section>
+
+    <section id="action">
+        <h2>MORE</h2>
+        <a href="{{ crturl }}resume">查看我的在线简历</a>
+        <span> 或 </span>
+        <a href="mailto:{{ my.contact.email }}">给我写邮件</a>
+    </section>
+
+</div>
+{% include disqus_load.html %}
