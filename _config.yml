@@ -18,7 +18,7 @@ kramdown:
 
 
 gems: [jekyll-paginate]
-paginate: 2
+paginate: 5
 paginate_path: "page:num"
 layout: post
 permalink: /:categories/:title/
